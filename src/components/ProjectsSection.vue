@@ -16,7 +16,7 @@
               <q-separator />
               <template v-slot:header>
                 <q-item-section avatar>
-                  <q-avatar color='orange' text-color='white'>{{ idx }}</q-avatar>
+                  <q-avatar color='secondary' text-color='black'>{{ idx }}</q-avatar>
                 </q-item-section>
                 <q-item-section>
                   <q-item-label class='text-h6'>{{ projects[idx - 1].projectTitle }}
