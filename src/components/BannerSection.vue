@@ -30,7 +30,6 @@ export default defineComponent({
   name: 'BannerSection',
   setup(){
     const {linkedin,github,facebook,instagram}=SOCIALMEDIA_LINKS
-    console.log(linkedin)
     return{
       linkedin,
       github,
