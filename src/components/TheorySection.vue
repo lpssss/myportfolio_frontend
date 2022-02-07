@@ -74,13 +74,13 @@ export default defineComponent({
           coursesByType[item.courseType]=[item]
         }
       })
-      console.log(coursesByType)
+      // console.log(coursesByType)
     }
 
     async function getCoursesData() {
       try {
         const response: AxiosResponse<Courses[]> = await api.get(API_LINK);
-        console.log(response.data)
+        // console.log(response.data)
         classifyCourses(response.data)
       } catch (error) {
         console.log(error);
