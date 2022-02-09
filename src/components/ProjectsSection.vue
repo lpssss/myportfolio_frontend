@@ -60,6 +60,7 @@ import { defineComponent, ref } from 'vue';
 import { api } from 'boot/axios';
 import { ApiLinks } from 'src/api-links';
 import { AxiosResponse } from 'axios';
+import { useQuasar } from 'quasar';
 
 const API_LINK = ApiLinks.Projects;
 export default defineComponent({
@@ -84,6 +85,10 @@ export default defineComponent({
     }
 
     const projects = ref<Projects[]>([]);
+    const $q=useQuasar()
+    $q.loading.show({
+      delay:500
+    })
 
     function capitalizeTitle(title: string): string {
       const words = title.split(' ');
@@ -115,6 +120,7 @@ export default defineComponent({
         response.data.sort(sortCompare);
         response.data.forEach(item => item.projectTitle = capitalizeTitle(item.projectTitle));
         projects.value = response.data;
+        $q.loading.hide()
       } catch (error) {
         console.log(error);
       }
