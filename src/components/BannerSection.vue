@@ -5,9 +5,8 @@
         Hello,
       </div>
       <div class='q-pa-md text-h6'>
-        Welcome to my website.
+        Welcome to Lim Poh Seng's portfolio website.
         <br> This website serves to showcase my interests, knowledge base and projects.
-        <br> More features and design coming soon.
       </div>
     </div>
     <div class='q-pa-sm text-center'>

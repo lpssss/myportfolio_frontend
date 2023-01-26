@@ -11,7 +11,7 @@
 
     <q-footer id="footer" class='bg-secondary text-black'>
       <div class='q-pa-sm text-center'>
-        <span>Copyright <q-icon name="copyright" /> 2022. All rights reserved.</span>
+        <span>Copyright <q-icon name="copyright" /> 2023. All rights reserved. Powered By Vercel, ASP.NET, Docker, Nginx</span>
       </div>
     </q-footer>
 
